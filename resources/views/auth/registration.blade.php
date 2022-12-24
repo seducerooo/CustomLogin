@@ -39,7 +39,7 @@
                            <label for="staticEmail" class="col-sm-2 col-form-label">Email :</label>
                            <div class="col-sm-10 form-control">
                                <input
-                                   type="email"
+                                   type="text"
                                    class="form-control-plaintext"
                                    id="staticEmail"
                                    name="email"
@@ -88,6 +88,8 @@
                         </div>
 
                   </div>
+              <a class="text-decoration-none text-center" href="{{ route('auth.login') }}">Already registered tab the link to login</a>
            </div>
+
     </form>
 @endsection
