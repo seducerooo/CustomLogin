@@ -1,6 +1,7 @@
 @extends('layouts.authpanel')
 @section('content')
-    <form action="" method="POST">
+    <form action="{{ route('auth.logged') }}" method="POST">
+        @csrf
         <div class="container">
             <br>
             <br>
@@ -67,7 +68,7 @@
                 </div>
 
             </div>
-            <a class="text-decoration-none text-center" href="{{ route('auth.register') }}">haven't registered tab the link to register</a>
+            <a class="text-decoration-none text-center" href="{{ route('auth.register') }}">haven't registered tab the link to register !!!!</a>
         </div>
 
     </form>
