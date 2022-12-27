@@ -26,6 +26,7 @@
                             value="{{ old('email') }}"
                             placeholder="enter your email ...">
                     </div>
+                    <span class="text-danger">@error('email')  {{ $message }} @enderror</span>
                 </div>
 
 
@@ -46,6 +47,7 @@
                             name="password"
                             placeholder="enter your password ...">
                     </div>
+                    <span class="text-danger">@error('password')  {{ $message }} @enderror</span>
                 </div>
 
 

@@ -24,7 +24,9 @@
                                      aria-label="name"
                                      name="name"
                                      value="{{ old('name') }}">
+
                            </div>
+                           <span class="text-danger">@error('name')  {{ $message }} @enderror</span>
 
                        </div>
 
@@ -46,7 +48,9 @@
                                    name="email"
                                    value="{{ old('email') }}"
                                    placeholder="enter your email ...">
+
                            </div>
+                           <span class="text-danger">@error('email')  {{ $message }} @enderror</span>
                        </div>
 
 
@@ -66,7 +70,9 @@
                                id="inputPassword"
                                name="password"
                                placeholder="enter your password ...">
+
                        </div>
+                           <span class="text-danger">@error('password')  {{ $message }} @enderror </span>
                        </div>
 
 
